@@ -3,18 +3,15 @@ import { CommonModule } from '@angular/common';
 import { LayoutHeaderComponent } from '../layout-header/layout-header.component';
 import { LayoutBlogComponent } from '../layout-blog/layout-blog.component';
 import { LayoutMapsComponent } from '../layout-maps/layout-maps.component';
-import { LayoutCalendarComponent } from '../layout-calendar/layout-calendar.component';
 import { LayoutSlidesComponent } from '../layout-slides/layout-slides.component';
 import { LayoutExperienceComponent } from '../layout-experience/layout-experience.component';
 import { LayoutGalleryComponent } from '../layout-gallery/layout-gallery.component';
 import { LayoutExploreComponent } from '../layout-explore/layout-explore.component';
 import { LayoutFooterComponent } from '../layout-footer/layout-footer.component';
-import { HttpClient } from '@angular/common/http';
 import { OnInit } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 import { catchError, of, tap } from 'rxjs';
 import { NzSafeAny } from 'ng-zorro-antd/core/types';
-import { s } from '@fullcalendar/core/internal-common';
 
 @Component({
   selector: 'app-layout-main',
@@ -23,7 +20,6 @@ import { s } from '@fullcalendar/core/internal-common';
     LayoutHeaderComponent,
     LayoutBlogComponent,
     LayoutMapsComponent,
-    LayoutCalendarComponent,
     LayoutSlidesComponent,
     LayoutExperienceComponent,
     LayoutGalleryComponent,
