@@ -1,0 +1,32 @@
+<div class="layout-maps">
+  <app-header-section [title]="bloc_2()?.title"></app-header-section>
+
+  <div class="activities-action">
+    @for(case of bloc_2()?.cases; track $index) {
+    <button>
+      <img
+        [src]="'assets/icons/activity' + ($index + 1) + '.svg'"
+        alt="case"
+      />
+      {{ case }}
+    </button>
+    }
+
+    <!-- <button>
+      <img src="assets/icons/MountainsBold.svg" alt="Mountain icon" />
+      Activity 1
+    </button>
+    <button>
+      <img src="assets/icons/FishingBold.svg" alt="Cheers icon" />
+      Activity 2
+    </button>
+    <button>
+      <img src="assets/icons/HuntingBold.svg" alt="External link" />
+      Activity 3
+    </button> -->
+  </div>
+
+  <div class="map-section">
+    <app-maps></app-maps>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="gallery-container">
+  <!-- Left Text Section -->
+  <div class="section">
+    <div class="text-content">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially
+      </p>
+
+      <p class="text-title">
+        Immortalisez des moments inoubliables avec
+        <span class="hightlight">#BASIC</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Featured Image Section -->
+  <div class="featured-container">
+    <div class="featured-image">
+      <img src="assets/images/fruit.png" alt="Fruit Platter" />
+      <div class="image-caption">
+        <div class="caption-content">
+          <h4>La famille</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <span class="date">24 Sep 2024</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small Image Gallery -->
+  <div class="gallery">
+    <div class="gallery-item" *ngFor="let item of galleryItems">
+      <img [src]="item.image" alt="Gallery Image" />
+      <div class="gallery-caption">
+        <span class="icon">📷</span> {{ item.name }}
+        <a href="#" class="external-link">↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Consultez <span class="mention">BASIC</span> et
+    <span class="hashtag">#BASIC</span> pour découvrir les expériences
+    inoubliables des pourvoiries et activités BASIC.
+  </div>
+</div>

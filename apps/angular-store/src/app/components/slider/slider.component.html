@@ -1,0 +1,21 @@
+<div class="slider-container">
+  <div class="slider-header">
+    <h2 class="title">{{ bloc_3()?.title }}</h2>
+
+    <div class="more-link">
+      <a href="#">{{ bloc_3()?.more_info }}</a>
+    </div>
+  </div>
+
+  <div class="swiper" #swiperContainer>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let item of cards()">
+        <app-card [card]="item"></app-card>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>

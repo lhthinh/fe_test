@@ -1,0 +1,133 @@
+/* === Global Container === */
+.experience-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px 0;
+}
+
+/* === Left Text Section === */
+.text-section {
+  width: 55%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+
+  .divider {
+    width: 35%;
+    height: 2px;
+    background: #bbb;
+    margin: 15px 0;
+    border: none;
+  }
+
+  .about {
+    h3 {
+      color: var(--3, #562c2c);
+      font-family: Poppins;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    p {
+      color: rgba(86, 44, 44, 0.8);
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 144.444% */
+    }
+  }
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #e14b42;
+  font-weight: bold;
+
+  color: #f2542d;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 125% */
+  text-transform: uppercase;
+}
+
+.secondary {
+  color: #ff5733;
+}
+
+.light-text {
+  color: rgba(242, 84, 45, 0.6);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+/* === Right Image Section === */
+.image-section {
+  width: 40%;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* === Features Section === */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.feature-item {
+  text-align: center;
+  width: 120px;
+}
+
+.icon {
+  font-size: 28px;
+  background: #009688;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  .img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}

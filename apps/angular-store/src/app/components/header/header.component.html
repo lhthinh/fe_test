@@ -1,0 +1,25 @@
+<header class="header">
+  @for(title of bannerTitle(); track $index) {
+  <div class="logo" [ngClass]="{ second: $index !== 0 }">{{ title }}</div>
+  }
+  <nav class="nav">
+    @for(item of bannerMenu(); track $index) {
+    <a href="#">{{ item }}</a>
+    }
+  </nav>
+  <div class="right">
+    <div class="icons">
+      <img src="assets/icons/Mountains.svg" alt="Mountain icon" />
+      <img src="assets/icons/Fishing.svg" alt="Cheers icon" />
+      <img src="assets/icons/Crosshair.svg" alt="Settings icon" />
+    </div>
+    <button class="action-btn" (click)="toggleDropdown()">
+      <img src="assets/icons/ArrowUpRight.svg" alt="External link" />
+    </button>
+
+    <div class="language-switcher">
+      <button (click)="changeLanguage.emit('en')">EN</button>
+      <button (click)="changeLanguage.emit('fr')">FR</button>
+    </div>
+  </div>
+</header>

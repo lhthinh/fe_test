@@ -1,0 +1,9 @@
+<section class="content-block">
+  <app-header-section [title]="bloc_1()?.title"></app-header-section>
+  <p class="block-subtitle">{{ bloc_1()?.subtitle }}</p>
+  <div class="card-container">
+    @for(card of cards(); track $index) {
+    <app-card [card]="card"></app-card>
+    }
+  </div>
+</section>
