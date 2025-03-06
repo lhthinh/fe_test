@@ -2,6 +2,7 @@
   "name": "angular-store",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
+  "version": 1,
   "prefix": "app",
   "sourceRoot": "apps/angular-store/src",
   "tags": [],
