@@ -2,9 +2,6 @@
   "name": "@angular-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "build": "npx nx build angular-store --configuration=production"
-  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~19.1.0",
