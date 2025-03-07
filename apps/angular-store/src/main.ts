@@ -8,13 +8,16 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { environment } from './environments/environment';
+import { inject } from '@vercel/analytics';
 
 // Factory function for translations
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+inject()
 
 bootstrapApplication(AppComponent, {
+  
   providers: [
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
@@ -30,5 +33,5 @@ bootstrapApplication(AppComponent, {
         defaultLanguage: 'en'
       })
     )
-  ]
+  ],
 }).catch(err => console.error(err));
